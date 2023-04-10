@@ -10,9 +10,9 @@
 
     <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
     <title>Kĩ năng</title>
@@ -26,7 +26,7 @@
               src="./hcmut.png"
               width="30"
               height="30"
-              class="d-inline-block align-top"
+              class="d-inline-block align-top mx-3"
               alt=""
             />
             Giới thiệu
@@ -53,9 +53,11 @@
                 <a class="nav-link" href="quatrinh.html">Quá trình học tập</a>
               </li>
 
-              <li class="nav-item active">
+              <li class="nav-item" active>
                 <!--Disenable phần tử-->
-                <a class="nav-link" href="demo.html">Các sản phẩm</a>
+                <a class="nav-link active" aria-current="page" href="demo.html"
+                  >Các sản phẩm</a
+                >
               </li>
               <li class="nav-item">
                 <!--Disenable phần tử-->
@@ -64,73 +66,356 @@
             </ul>
           </div>
         </nav>
-        <div class="page-header p-3">
-          <h1>Các sản phẩm</h1>
-          <div class="jumbotron">
-            <h1 class="display-4">Môn Lập trình nâng cao</h1>
-            <p class="lead">
-              Hiện thực một ứng dụng điện thoại cập nhật số ca mắc Covid-19
-            </p>
-
-            <hr class="my-4" />
-            <div class="row">
-              <div
-                class="col-12 col-md-6 bg-primary p-2 text-dark align-items-end d-flex rounded"
+        <div class="page-header">
+          <h1 class="py-2 text-center">Các sản phẩm</h1>
+          <div class="my-2 lead py-4">
+            Sau đây là một vài dự án đã được published, về tất cả các dự án đang
+            thực hiện, hãy truy cập vào link <strong>GitHub</strong> để xem thêm
+            nhiều dự án. các dự án chủ yếu làm về các vấn đề: <code>Web</code>,
+            <code>App</code> (các nền tảng như <strong>PHP</strong>,
+            <strong>React</strong>, <strong>React Native</strong>), một số dự án
+            AI (thực hiện trong môn Nhập môn AI)
+            <p class="ps-5 my-2">
+              <strong>Link published: </strong
+              ><a href="https://github.com/MauDucKG"
+                >https://github.com/MauDucKG</a
               >
-                <!-- <img
-                  class="align-self-center mw-100"
-                  src="00000PORTRAIT_00000_BURST20200706171834000.jpg"
-                  alt="bootstrap"
-                /> -->
-                <video src="./20220422_203613.mp4" controls></video>
-              </div>
-              <div class="col-12 col-md-6 p-5">
-                <p>
-                  Cập nhật số ca mắc Covid-19, số ca mắc mới trong ngày, thời
-                  gian cập nhật gần nhất, số trường hợp tử vong ở
-                </p>
-                <ul class="p-1">
-                  <li>Trên toàn thế giới</li>
-                  <li>Ở từng nước</li>
-                  <li>Ở từng tỉnh của Việt Nam</li>
-                </ul>
-                <p>Sử dụng Flutter là ngôn ngữ lập trình.</p>
-                <p>
-                  Dữ liệu được xuất ra sử dụng API để kéo về (phần Global và
-                  Country) và Parse HTML để kéo dữ liệu ở phần Vietnam.
-                </p>
+            </p>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <h1 class="display-6">Website shop bán quần áo BigFarm</h1>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="lead">
+                    Hiện thực một ứng dụng web sử dụng PHP và cơ sở dữ liệu
+                    MySQL dugnf để giới thiệu về một doanh nghiệp bán hàng (tên
+                    là BigFarm) cùng với team Lemon trong môn Lập trình Web tại
+                    trường đại học.
+                  </p>
+                  <hr class="" />
+                  <div class="col-12">
+                    <p><strong>Có các tính năng như:</strong></p>
+                    <ul class="m-4">
+                      <li>Đăng nhập</li>
+                      <li>
+                        Quản lí người dùng, admin <code>(thêm, xóa, sửa)</code>
+                      </li>
+                      <li>
+                        Quản lí các sản phẩm <code>(thêm, xóa, sửa)</code>
+                      </li>
+                      <li>
+                        Quản lí các bài viết, chi nhánh
+                        <code>(thêm, xóa, sửa)</code>
+                      </li>
+                      <li>Phân trang trên một số màn hình</li>
+                      <li>Có sử dụng <code>Bootstrap 5</code> cho ứng dụng</li>
+                      <li>Sử dụng cơ sở dữ liệu <code>MySQL</code></li>
+                      <li>Published trên một domain</li>
+                    </ul>
+                    <p>
+                      Các chức năng được nhóm Lemon hiện thực theo mô hình
+                      <code>MVC</code> để đảm báo tính toàn diện của một dự án
+                      trên mọi mặt, là thành quả của team với khoảng
+                      <code>150</code> commit trong khoảng thời gian tầm 2
+                      tháng. Có thể tham khảo chi tiết quá trình thông qua những
+                      link sau:
+                    </p>
+                    <p>
+                      <strong>Link hiện thực: </strong
+                      ><a href="https://github.com/MauDucKG/BigFarm"
+                        >https://github.com/MauDucKG/BigFarm</a
+                      >
+                    </p>
+                    <p>
+                      <strong>Link published: </strong
+                      ><a href="http://bigfarm.ezyro.com"
+                        >http://bigfarm.ezyro.com</a
+                      >
+                    </p>
+                    <div class="row">
+                      <div class="col-12 col-lg-6">
+                        <img src="bigfarm1.png" alt="" class="container" />
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <img src="bigfarm2.png" alt="" class="container" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="jumbotron">
-            <h1 class="display-4">Web giới thiệu bản thân</h1>
-            <p class="lead">
-              Tạo ra một web để lưu những thông tin căn bản cho bản thân.
-            </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <h1 class="display-6">
+                    App Mobile xem thông tin dịch Covid-19
+                  </h1>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="lead">
+                    Hiện thực một ứng dụng điện thoại cập nhật số ca mắc
+                    Covid-19
+                  </p>
+                  <hr class="my-4" />
+                  <div class="row">
+                    <div
+                      class="col-12 col-lg-5 bg-primary p-2 text-dark d-flex rounded justify-content-sm-center"
+                    >
+                      <video
+                        src="./20220422_203613.mp4"
+                        class="object-fit-contain"
+                        controls
+                      ></video>
+                    </div>
+                    <div class="col-12 col-lg-7 p-5 my-auto">
+                      <p>
+                        <strong>Cập nhật</strong> số ca mắc
+                        <code>Covid-19</code>, số ca mắc mới trong ngày, thời
+                        gian cập nhật gần nhất, số trường hợp tử vong ở
+                      </p>
+                      <ul class="p-1">
+                        <li>Trên toàn thế giới</li>
+                        <li>Ở từng nước</li>
+                        <li>Ở từng tỉnh của Việt Nam</li>
+                      </ul>
+                      <p>Sử dụng <code>Flutter</code> là ngôn ngữ lập trình.</p>
+                      <p>
+                        Dữ liệu được xuất ra sử dụng <code>API</code> để kéo về
+                        (phần Global và Country) và Parse HTML để kéo dữ liệu ở
+                        phần Vietnam.
+                      </p>
+                      <p>
+                        <strong>Link hiện thực: </strong
+                        ><a href="https://github.com/MauDucKG/ltnc_hk212"
+                          >https://github.com/MauDucKG/ltnc_hk212</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse5"
+                  aria-expanded="true"
+                  aria-controls="collapse5"
+                >
+                  <h1 class="display-6">
+                    Website quản lí nhân sự và chỗ ngồi trong công ty
+                  </h1>
+                </button>
+              </h2>
+              <div
+                id="collapse5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="lead">
+                    Trong công ty có nhiều phòng ban, vị trí chỗ ngồi
+                    (<strong>seat</strong>) nhóm Coffein thực hiện project này
+                    với mong muốn quản lí những chỗ người cũng như nhân sự này
+                    dễ dàng hơn. Dự án được thực hiện trong thời gian thực tập
+                    tại công ty <strong>Cybozu Việt Nam</strong> cùng với team
+                    <strong>Coffein</strong> cùng 2 mentor là anh
+                    <strong>Viễn</strong> và chị <strong>Huyền</strong>
+                  </p>
+                  <hr class="my-4" />
+                  <div class="row">
+                    <strong
+                      >Các chức năng chính có thể được đề cập như:
+                    </strong>
+                    <ul class="list-group list-group-flush my-1">
+                      <li class="list-group-item">
+                        Đăng nhập (có áp dụng cơ chế <code>Authen</code>,
+                        <code>Author</code> bằng <code>Acess Token</code> và
+                        <code>Refresh Token</code>) kết hợp với
+                        <code>Hash password</code>
+                      </li>
+                      <li class="list-group-item">
+                        Quản lí nhân sự với các chức năng cơ bản như thế xóa sửa
+                      </li>
+                      <li class="list-group-item">
+                        Quản lí map (quản lí vị trí các chỗ ngồi) ở đây sử dụng
+                        thư viện <code>react-grid-layout</code> và
+                        <code>react-grid-system</code> để quản lí chỉnh sửa.
+                      </li>
+                      <li class="list-group-item">
+                        Quá trình làm việc theo mô hình
+                        <strong>Scrum</strong> trong lập trình dự án phần mềm
+                      </li>
+                      <li class="list-group-item">Published</li>
+                    </ul>
+                    <strong>Quá trình thực hiện dự án trong công ty tạo điều kiện để học
+                    hỏi được quy trình làm việc chuyên nghiệp, và cách làm việc
+                    nhóm.</strong>
+                    <p>
+                      <strong>Link spec: </strong
+                      ><a
+                        href="https://github.com/cvn-intern/Coffeein-Seatmap/wiki"
+                        >https://github.com/cvn-intern/Coffeein-Seatmap/wiki</a
+                      >
+                    </p>
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                        <img src="seatmap1.png" alt="" class="container" />
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <img src="seatmap2.png" alt="" class="container" />
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <img src="seatmap3.png" alt="" class="container" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <h1 class="display-6">Website giới thiệu bản thân</h1>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="lead">
+                    Tạo ra một <strong>Website</strong> đơn giản để lưu những
+                    thông tin căn bản cho bản thân.
+                  </p>
 
-            <hr class="my-4" />
-            <div class="row p-3">
-              <p>Sử dụng Bootstrap để tạo giao diện đẹp và nhanh chóng</p>
+                  <hr class="my-4" />
+                  <div class="row p-3">
+                    <p>
+                      Sử dụng <code>Bootstrap 5</code> để tạo giao diện đẹp và
+                      nhanh chóng
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <img src="info.png" alt="" class="container" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="jumbotron">
-            <h1 class="display-4">Project SeatMap</h1>
-            <p class="lead">
-              Hiện thực một ứng dụng web sử dụng ReactJS (Front-end) và NodeJS
-              (Back-end MongoDB) dùng để quản lí nhân viên và vị trí chỗ ngồi
-              trong công ty.
-            </p>
-            <hr class="my-4" />
-            <div class="row p-3">
-              <p>Có các tính năng như:</p>
-              <ul class="p-1">
-                <br/>
-                <li>Đăng nhập</li>
-                <li>Quản lí nhân viên (thêm, xóa, sửa)</li>
-                <li>Quản lí sơ đồ chỗ ngồi (thêm, xóa, sửa)</li>
-                <li>Thêm nhân viên vào chỗ ngồi</li>
-              </ul>
-              <img src="seatmap.png" alt="" class="container">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse4"
+                  aria-expanded="false"
+                  aria-controls="collapse4"
+                >
+                  <h1 class="display-6">
+                    Cộng tác nghiên cứu về cải tiến chất lượng nhận diện giọng
+                    nói
+                  </h1>
+                </button>
+              </h2>
+              <div
+                id="collapse4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="lead">
+                    <strong>Hỗ trợ nghiên cứu về chủ đề: </strong> Cải thiện
+                    công nghệ Nhận dạng Giọng nói Tự động (<code>ASR</code>) cho
+                    các Ngôn ngữ nghèo tài nguyên (dữ liệu) thông qua Tăng cường
+                    Dữ liệu. Nghiên cứu này tập trung vào việc tăng cường dữ
+                    liệu để cải thiện hiệu suất của công nghệ Nhận dạng Giọng
+                    nói Tự động cho các ngôn ngữ thấp tài nguyên. Phương pháp
+                    này được đề xuất nhằm tối ưu hóa quá trình huấn luyện mô
+                    hình và tăng cường khả năng phân loại giọng nói của ngôn ngữ
+                    đó. Kết quả nghiên cứu này có thể giúp cải thiện hiệu suất
+                    của các ứng dụng giọng nói tự động cho các ngôn ngữ thấp tài
+                    nguyên, góp phần nâng cao trải nghiệm người dùng và giúp cho
+                    các ngôn ngữ này được sử dụng rộng rãi hơn trong các ứng
+                    dụng công nghệ.
+                  </p>
+                  <hr class="" />
+                  <div class="col-12">
+                    <p>
+                      Nghiên cứu này tập trung vào phương pháp tăng cường dữ
+                      liệu để giải quyết các bộ dữ liệu nhỏ và giúp mạng học sâu
+                      có khả năng phủ sóng tốt hơn trong nhiệm vụ ASR. Kết quả
+                      thực nghiệm trên các cấu hình khác nhau của bộ dữ liệu
+                      VIVOS và hai biến thể của kiến trúc mạng Conformer cho
+                      thấy phương pháp được đề xuất của chúng tôi có sự cải
+                      thiện đáng kể.
+                    </p>
+                    <p>
+                      Thông qua các phương pháp làm nhiễu dữ liệu trong
+                      <code>Spectrogram</code> nhóm nghiên cứu đạt được một số
+                      kết quả trên một số nguồn dữ liệu ít tài nguyên như Tiếng
+                      Việt, kết quả nghiên cứu cũng đã được published trên báo
+                      <strong>NICS</strong> (Conference: 2022 9th NAFOSTED
+                      Conference on Information and Computer Science), và cũng
+                      đã tham đự cuộc thi <strong>VLSP2022</strong>
+                    </p>
+                    <p>
+                      <strong>Link thông tin: </strong
+                      ><a
+                        href="https://www.researchgate.net/publication/364305576_Improving_Automatic_Speech_Recognition_for_Low-Resource_Language_by_Data_Augmentation"
+                        >https://www.researchgate.net/publication/364305576_Improving_Automatic_Speech_Recognition_for_Low-Resource_Language_by_Data_Augmentation</a
+                      >
+                    </p>
+                    <div class="row">
+                      <div class="col-12">
+                        <img src="asr.png" alt="" class="container" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -140,18 +425,8 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
   </body>
